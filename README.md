@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="http://tianshou.readthedocs.io"><img width="300px" height="auto" src="https://github.com/thu-ml/tianshou/raw/master/docs/_static/images/tianshou-logo.png"></a>
+  <a href="http://tianshou.readthedocs.io"><img width="256px" height="auto" src="https://github.com/ZhangYikaii/LAMDA-Beamer-Template/blob/5dc5cbf79bd0d9f984bd803457dbad642c9f4d25/logos/zhijian-logo.jpg?raw=true"></a>
 </div>
 
 &nbsp;
@@ -85,36 +85,69 @@ The example scripts are under [test/](https://github.com/thu-ml/tianshou/blob/ma
 
 中文文档位于 [https://tianshou.readthedocs.io/zh/master/](https://tianshou.readthedocs.io/zh/master/)。
 
-| 列1 | 列2 |
-| --- | --- |
-| <div style="white-space: nowrap">第一行很长的内容，不希望换行显示</div> | 内容 |
+
+## Why Zhijian?
+
+### Concise things do big
+TODO 这里画一张图和描述，图中有四个功能板块：Finetune、KD/Reg、PETL、Soup，并表示加入任意一个板块的方法修改的代码不多，只有几行，标注在图旁边。
+
+| Model Reuse Framework | GitHub Stars | Unified View | # of Alg. <sup>(1)</sup> | # of Backbone <sup>(1)</sup> | # of Dataset <sup>(1)</sup> | LLM Support | Documentation | Last Update |
+| --- | --- | --- | --- | --- | --- | --- | --- |  --- |
+| [Stable-Baselines](https://github.com/hill-a/stable-baselines) | [![GitHub stars](https://img.shields.io/github/stars/hill-a/stable-baselines)](https://github.com/hill-a/stable-baselines/stargazers) | 11 | :heavy_check_mark: (gym) | :heavy_minus_sign: <sup>(2)</sup> | :heavy_check_mark: | :x:  | TF1 | TODO |
+| [Stable-Baselines3](https://github.com/DLR-RM/stable-baselines3)   | [![GitHub stars](https://img.shields.io/github/stars/DLR-RM/stable-baselines3)](https://github.com/DLR-RM/stable-baselines3/stargazers)         | 7<sup> (3)</sup>         | :heavy_check_mark: (gym)       | :heavy_minus_sign: <sup>(2)</sup> | :x:                | :heavy_check_mark: | PyTorch    | TODO |
+|  |  |  |  |  |  |  |  |
+| [Tianshou](https://github.com/thu-ml/tianshou)                     | [![GitHub stars](https://img.shields.io/github/stars/thu-ml/tianshou)](https://github.com/thu-ml/tianshou/stargazers)                           | 20                       | :heavy_check_mark: (Gymnasium) | :heavy_check_mark:                | :heavy_check_mark: | :heavy_check_mark: | PyTorch | TODO |
+
+<sup>(1): access date: 2021-08-08</sup>
+
+<sup>(2): not all algorithms support this feature</sup>
+
+
+### Reproducible SoTA Results
+
+**Zhijian** fixed the random seed to ensure reproducibility of the results, with only minor variations across different devices.
+Partial results are displayed below. For more, please click [[here]](TODO)
 
 
 | Method | Tuned Params | C-100 | Cal. | DTD | Flow. | Pets | SVHN | SUN397 | Mean | P-Cam. | E-SAT | R-45 | Retin. | Mean | Clevr/C | Clevr/D | DMLab | KITTI/D | dSpri./L | dSpri./O | S-NORB/A | S-NORB/E | Mean|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| **Adapter** |  | 70.7 | 89.0 | 73.0 | 97.8 | 92.2 | 84.7 | 57.9 | 80.7 | 86.4 | 95.0 | 85.2 | 74.4 | 85.2 | 78.6 | 63.0 | 49.5 | 76.1 | 71.3 | 46.6 | 24.3 | 33.9 | 55.4 |
-| **LoRA** |  | 71.7 | 89.4 | 73.8 | 99.5 | 93.1 | 83.4 | 57.8 | 81.2 | 87.6 | 95.0 | 85.2 | 77.0 | 86.2 | 81.7 | 62.8 | 51.1 | 77.1 | 78.6 | 49.7 | 27.2 | 39.9 | 58.5 |
-| **Visual Prompt Tuning** |  | 71.0 | 89.1 | 62.4 | 99.4 | 92.2 | 84.2 | 56.4 | 79.2 | 80.5 | 95.0 | 71.9 | 76.3 | 80.9 | 73.4 | 62.4 | 44.6 | 77.8 | 80.3 | 41.1 | 24.3 | 40.6 | 55.6 |
-| **Scaling & Shifting Your Features** |  | 71.8 | 89.2 | 72.1 | 99.3 | 92.5 | 86.9 | 58.1 | 81.4 | 85.4 | 94.1 | 84.9 | 76.4 | 85.2 | 77.7 | 64.9 | 49.6 | 78.3 | 79.5 | 48.5 | 23.9 | 33.6 | 57.0 |
-| **Factor-tuning** |  | 72.7 | 89.2 | 73.0 | 99.5 | 92.8 | 85.1 | 58.7 | 81.6 | 85.8 | 95.6 | 84.9 | 77.2 | 85.9 | 77.4 | 62.6 | 38.6 | 77.5 | 40.0 | 11.8 | 25.9 | 38.4 | 46.5 |
-| **Convolutional Bypasses** |  | 72.4 | 87.5 | 74.4 | 99.5 | 92.3 | 88.7 | 54.9 | 81.4 | 86.5 | 94.8 | 82.3 | 77.3 | 85.2 | 68.8 | 60.9 | 47.3 | 79.8 | 74.4 | 47.8 | 27.2 | 45.2 | 56.4 |
-| **Linear Probing** |  | 60.9 | 87.8 | 69.3 | 99.3 | 90.5 | 44.2 | 56.3 | 72.6 | 81.4 | 90.5 | 77.2 | 74.5 | 80.9 | 36.6 | 32.4 | 34.6 | 55.0 | 23.1 | 29.3 | 15.9 | 26.4 | 31.7 |
-| **FT/Partial-1** |  | 65.5 | 88.3 | 71.6 | 98.8 | 91.9 | 61.2 | 55.9 | 76.2 | 83.9 | 93.9 | 83.0 | 74.9 | 83.9 | 50.2 | 49.3 | 44.2 | 63.6 | 45.2 | 42.7 | 18.2 | 27.5 | 42.6 |
-| **FT/Total** |  | 71.1 | 89.5 | 73.2 | 99.4 | 92.8 | 85.2 | 33.3 | 77.8 | 85.3 | 94.3 | 86.2 | 76.4 | 85.5 | 77.1 | 70.9 | 48.9 | 72.8 | 46.7 | 39.2 | 21.0 | 37.8 | 51.8 |
+| <div style="white-space: nowrap">**Adapter**</div> |  | 70.7 | 89.0 | 73.0 | 97.8 | 92.2 | 84.7 | 57.9 | 80.7 | 86.4 | 95.0 | 85.2 | 74.4 | 85.2 | 78.6 | 63.0 | 49.5 | 76.1 | 71.3 | 46.6 | 24.3 | 33.9 | 55.4 |
+| <div style="white-space: nowrap">**LoRA**</div> |  | 71.7 | 89.4 | 73.8 | 99.5 | 93.1 | 83.4 | 57.8 | 81.2 | 87.6 | 95.0 | 85.2 | 77.0 | 86.2 | 81.7 | 62.8 | 51.1 | 77.1 | 78.6 | 49.7 | 27.2 | 39.9 | 58.5 |
+| <div style="white-space: nowrap">**Visual Prompt Tuning**</div> |  | 71.0 | 89.1 | 62.4 | 99.4 | 92.2 | 84.2 | 56.4 | 79.2 | 80.5 | 95.0 | 71.9 | 76.3 | 80.9 | 73.4 | 62.4 | 44.6 | 77.8 | 80.3 | 41.1 | 24.3 | 40.6 | 55.6 |
+| <div style="white-space: nowrap">**Scaling & Shifting Your Features**</div> |  | 71.8 | 89.2 | 72.1 | 99.3 | 92.5 | 86.9 | 58.1 | 81.4 | 85.4 | 94.1 | 84.9 | 76.4 | 85.2 | 77.7 | 64.9 | 49.6 | 78.3 | 79.5 | 48.5 | 23.9 | 33.6 | 57.0 |
+| <div style="white-space: nowrap">**Factor-tuning**</div> |  | 72.7 | 89.2 | 73.0 | 99.5 | 92.8 | 85.1 | 58.7 | 81.6 | 85.8 | 95.6 | 84.9 | 77.2 | 85.9 | 77.4 | 62.6 | 38.6 | 77.5 | 40.0 | 11.8 | 25.9 | 38.4 | 46.5 |
+| <div style="white-space: nowrap">**Convolutional Bypasses**</div> |  | 72.4 | 87.5 | 74.4 | 99.5 | 92.3 | 88.7 | 54.9 | 81.4 | 86.5 | 94.8 | 82.3 | 77.3 | 85.2 | 68.8 | 60.9 | 47.3 | 79.8 | 74.4 | 47.8 | 27.2 | 45.2 | 56.4 |
+| <div style="white-space: nowrap">**Linear Probing**</div> |  | 60.9 | 87.8 | 69.3 | 99.3 | 90.5 | 44.2 | 56.3 | 72.6 | 81.4 | 90.5 | 77.2 | 74.5 | 80.9 | 36.6 | 32.4 | 34.6 | 55.0 | 23.1 | 29.3 | 15.9 | 26.4 | 31.7 |
+| <div style="white-space: nowrap">**FT/Partial-1**</div> |  | 65.5 | 88.3 | 71.6 | 98.8 | 91.9 | 61.2 | 55.9 | 76.2 | 83.9 | 93.9 | 83.0 | 74.9 | 83.9 | 50.2 | 49.3 | 44.2 | 63.6 | 45.2 | 42.7 | 18.2 | 27.5 | 42.6 |
+| <div style="white-space: nowrap">**FT/Total**</div> |  | 71.1 | 89.5 | 73.2 | 99.4 | 92.8 | 85.2 | 33.3 | 77.8 | 85.3 | 94.3 | 86.2 | 76.4 | 85.5 | 77.1 | 70.9 | 48.9 | 72.8 | 46.7 | 39.2 | 21.0 | 37.8 | 51.8 |
 
 
+## Installation for Research
 
 
-## Why Zhijian?
+## Contributing
 
-<h3 align="center">
-    <p>
-        Concise things do big
-    <p>
-</h3>
+Tianshou is still under development. More algorithms and features are going to be added and we always welcome contributions to help make Tianshou better. If you would like to contribute, please check out [this link](https://tianshou.readthedocs.io/en/master/contributing.html).
 
+## Citing Tianshou
 
-| Model Reuse Framework | GitHub Stars | # of Alg. <sup>(1)</sup> | # of Backbone <sup>(1)</sup> | Batch Training | RNN Support | Nested Observation | Backend    |
-| ------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |--------------------------------| --------------------------------- | ------------------ | ------------------ | ---------- |
-| [Baselines](https://github.com/openai/baselines)                   | [![GitHub stars](https://img.shields.io/github/stars/openai/baselines)](https://github.com/openai/baselines/stargazers)                         | 9                        | :heavy_check_mark: (gym)       | :heavy_minus_sign: <sup>(2)</sup> | :heavy_check_mark: | :x:                | TF1        |
-| [Stable-Baselines](https://github.com/hill-a/stable-baselines)     | [![GitHub stars](https://img.shields.io/github/stars/hill-a/stable-baselines)](https://github.com/hill-a/stable-baselines/stargazers)           | 11                       | :heavy_check_mark: (gym)       | :heavy_minus_sign: <sup>(2)</sup> | :heavy_check_mark: | :x:                | TF1        |
+If you find Tianshou useful, please cite it in your publications.
+
+```latex
+@article{tianshou,
+  author  = {Jiayi Weng and Huayu Chen and Dong Yan and Kaichao You and Alexis Duburcq and Minghao Zhang and Yi Su and Hang Su and Jun Zhu},
+  title   = {Tianshou: A Highly Modularized Deep Reinforcement Learning Library},
+  journal = {Journal of Machine Learning Research},
+  year    = {2022},
+  volume  = {23},
+  number  = {267},
+  pages   = {1--6},
+  url     = {http://jmlr.org/papers/v23/21-1127.html}
+}
+```
+
+## Acknowledgment
+
+Tianshou was previously a reinforcement learning platform based on TensorFlow. You can check out the branch [`priv`](https://github.com/thu-ml/tianshou/tree/priv) for more detail. Many thanks to [Haosheng Zou](https://github.com/HaoshengZou)'s pioneering work for Tianshou before version 0.1.1.
+
+We would like to thank [TSAIL](http://ml.cs.tsinghua.edu.cn/) and [Institute for Artificial Intelligence, Tsinghua University](http://ml.cs.tsinghua.edu.cn/thuai/) for providing such an excellent AI research platform.
