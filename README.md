@@ -85,7 +85,9 @@ The example scripts are under [test/](https://github.com/thu-ml/tianshou/blob/ma
 
 中文文档位于 [https://tianshou.readthedocs.io/zh/master/](https://tianshou.readthedocs.io/zh/master/)。
 
-
+| 列1 | 列2 |
+| --- | --- |
+| <div style="white-space: nowrap">第一行很长的内容，不希望换行显示</div> | 内容 |
 
 
 | Method | Tuned Params | C-100 | Cal. | DTD | Flow. | Pets | SVHN | SUN397 | Mean | P-Cam. | E-SAT | R-45 | Retin. | Mean | Clevr/C | Clevr/D | DMLab | KITTI/D | dSpri./L | dSpri./O | S-NORB/A | S-NORB/E | Mean|
