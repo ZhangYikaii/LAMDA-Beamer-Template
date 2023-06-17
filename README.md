@@ -85,6 +85,27 @@ The example scripts are under [test/](https://github.com/thu-ml/tianshou/blob/ma
 
 中文文档位于 [https://tianshou.readthedocs.io/zh/master/](https://tianshou.readthedocs.io/zh/master/)。
 
+<style>
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid black;
+}
+
+td:nth-child(3), th:nth-child(3),
+td:nth-child(4), th:nth-child(4) {
+  border-left-width: 2px;
+}
+</style>
+
+| 列1 | 列2 | 列3 | 列4 | 列5 |
+| --- | --- | --- | --- | --- |
+| 内容 | 内容 | 内容 | 内容 | 内容 |
+| 内容 | 内容 | 内容 | 内容 | 内容 |
+| 内容 | 内容 | 内容 | 内容 | 内容 |
+| 内容 | 内容 | 内容 | 内容 | 内容 |
 
 ## Why Zhijian?
 
