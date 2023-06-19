@@ -1,3 +1,13 @@
+<style>
+  table {
+    border-collapse: collapse;
+  }
+  table td, table th {
+    border: none;
+    padding: 8px;
+  }
+</style>
+
 <div align="center">
   <a href="http://tianshou.readthedocs.io"><img width="256px" height="auto" src="https://github.com/ZhangYikaii/LAMDA-Beamer-Template/blob/5dc5cbf79bd0d9f984bd803457dbad642c9f4d25/logos/zhijian-logo.jpg?raw=true"></a>
 </div>
