@@ -30,27 +30,280 @@
 
 + Regularization via Pre-Trained Parameters
   <details>
-  <summary style="margin-left: 10px;">Adapter</summary>
+  <summary style="margin-left: 10px;">Fine-tune</summary>
   <div style="margin-left: 30px;">
-  <table class="imgtable" style="border-collapse: collapse;"><tr><td>
-	<img src="https://github.com/ZhangYikaii/LAMDA-Beamer-Template/blob/main/logos/adapter.png?raw=true" alt="WSFG" height="120px" style="object-fit: cover; width: 100%; height: 100%;" />&nbsp;</td>
-	<td align="left"><ul>
-	<li><p>Rakshith Sharma Srinivasa, Mark A. Davenport, Justin Romberg. Trading beams for bandwidth: Imaging with randomized beamforming. In: ICML'19.
-	<a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Zhang_Learning_Debiased_Representations_via_Conditional_Attribute_Interpolation_CVPR_2023_paper.pdf">[Paper]</a>
-	<a href="https://github.com/ZhangYikaii/chi-square">[Code]</a>
-	</p>
-	</li>
-	<p style="color:#5F5F5F;font-family:Calibri, sans-serif">
-	We propose chi-square model, a novel method for learning debiased representation. The chi-square model addresses dataset bias by identifying Intermediate Attribute Samples (IASs) operating a chi-pattern and rectifying representations through a chi-structured metric learning objective. It achieves remarkable performance across diverse datasets.
-	</p>
-	</ul>
-	</td></tr>
+  <table class="imgtable" style="border: none; text-align: center;"><tr><td>
+  <img src="https://github.com/ZhangYikaii/LAMDA-Beamer-Template/blob/main/logos/adapter.png?raw=true" alt="WSFG" height="120px" style="object-fit: cover; width: 100%; height: 100%;" />&nbsp;</td>
+  <td align="left"><ul>
+  <li><p>Rakshith Sharma Srinivasa, Mark A. Davenport, Justin Romberg. <b>Trading beams for bandwidth: Imaging with randomized beamforming.</b> In: ICML'19.
+  <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Zhang_Learning_Debiased_Representations_via_Conditional_Attribute_Interpolation_CVPR_2023_paper.pdf">[Paper]</a>
+  <a href="https://github.com/ZhangYikaii/chi-square">[Source Code]</a>
+  </p>
+  </li>
+  <p style="color:#5F5F5F;font-family:Calibri, sans-serif">
+  We propose chi-square model, a novel method for learning debiased representation. The chi-square model addresses dataset bias by identifying Intermediate Attribute Samples (IASs) operating.
+  </p>
+  </ul>
+  </td></tr>
+  </table>
+  </div>
+  </details>
+
+  <details>
+  <summary style="margin-left: 10px;">L<sup>2</sup> penalty / L<sup>2</sup>SP</summary>
+  <div style="margin-left: 30px;">
+  <table class="imgtable" style="border: none; text-align: center;"><tr><td>
+  <img src="https://github.com/ZhangYikaii/LAMDA-Beamer-Template/blob/main/logos/adapter.png?raw=true" alt="WSFG" height="120px" style="object-fit: cover; width: 100%; height: 100%;" />&nbsp;</td>
+  <td align="left"><ul>
+  <li><p>Rakshith Sharma Srinivasa, Mark A. Davenport, Justin Romberg. <b>Trading beams for bandwidth: Imaging with randomized beamforming.</b> In: ICML'19.
+  <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Zhang_Learning_Debiased_Representations_via_Conditional_Attribute_Interpolation_CVPR_2023_paper.pdf">[Paper]</a>
+  <a href="https://github.com/ZhangYikaii/chi-square">[Source Code]</a>
+  </p>
+  </li>
+  <p style="color:#5F5F5F;font-family:Calibri, sans-serif">
+  We propose chi-square model, a novel method for learning debiased representation. The chi-square model addresses dataset bias by identifying Intermediate Attribute Samples (IASs) operating.
+  </p>
+  </ul>
+  </td></tr>
+  </table>
+  </div>
+  </details>
+
+  <details>
+  <summary style="margin-left: 10px;">DELTA</summary>
+  <div style="margin-left: 30px;">
+  <table class="imgtable" style="border: none; text-align: center;"><tr><td>
+  <img src="https://github.com/ZhangYikaii/LAMDA-Beamer-Template/blob/main/logos/adapter.png?raw=true" alt="WSFG" height="120px" style="object-fit: cover; width: 100%; height: 100%;" />&nbsp;</td>
+  <td align="left"><ul>
+  <li><p>Rakshith Sharma Srinivasa, Mark A. Davenport, Justin Romberg. <b>Trading beams for bandwidth: Imaging with randomized beamforming.</b> In: ICML'19.
+  <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Zhang_Learning_Debiased_Representations_via_Conditional_Attribute_Interpolation_CVPR_2023_paper.pdf">[Paper]</a>
+  <a href="https://github.com/ZhangYikaii/chi-square">[Source Code]</a>
+  </p>
+  </li>
+  <p style="color:#5F5F5F;font-family:Calibri, sans-serif">
+  We propose chi-square model, a novel method for learning debiased representation. The chi-square model addresses dataset bias by identifying Intermediate Attribute Samples (IASs) operating.
+  </p>
+  </ul>
+  </td></tr>
+  </table>
+  </div>
+  </details>
+
+  <details>
+  <summary style="margin-left: 10px;">Elastic Weight Consolidation</summary>
+  <div style="margin-left: 30px;">
+  <table class="imgtable" style="border: none; text-align: center;"><tr><td>
+  <img src="https://github.com/ZhangYikaii/LAMDA-Beamer-Template/blob/main/logos/adapter.png?raw=true" alt="WSFG" height="120px" style="object-fit: cover; width: 100%; height: 100%;" />&nbsp;</td>
+  <td align="left"><ul>
+  <li><p>Rakshith Sharma Srinivasa, Mark A. Davenport, Justin Romberg. <b>Trading beams for bandwidth: Imaging with randomized beamforming.</b> In: ICML'19.
+  <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Zhang_Learning_Debiased_Representations_via_Conditional_Attribute_Interpolation_CVPR_2023_paper.pdf">[Paper]</a>
+  <a href="https://github.com/ZhangYikaii/chi-square">[Source Code]</a>
+  </p>
+  </li>
+  <p style="color:#5F5F5F;font-family:Calibri, sans-serif">
+  We propose chi-square model, a novel method for learning debiased representation. The chi-square model addresses dataset bias by identifying Intermediate Attribute Samples (IASs) operating.
+  </p>
+  </ul>
+  </td></tr>
+  </table>
+  </div>
+  </details>
+
+  <details>
+  <summary style="margin-left: 10px;">Batch Spectral Shrinkage</summary>
+  <div style="margin-left: 30px;">
+  <table class="imgtable" style="border: none; text-align: center;"><tr><td>
+  <img src="https://github.com/ZhangYikaii/LAMDA-Beamer-Template/blob/main/logos/adapter.png?raw=true" alt="WSFG" height="120px" style="object-fit: cover; width: 100%; height: 100%;" />&nbsp;</td>
+  <td align="left"><ul>
+  <li><p>Rakshith Sharma Srinivasa, Mark A. Davenport, Justin Romberg. <b>Trading beams for bandwidth: Imaging with randomized beamforming.</b> In: ICML'19.
+  <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Zhang_Learning_Debiased_Representations_via_Conditional_Attribute_Interpolation_CVPR_2023_paper.pdf">[Paper]</a>
+  <a href="https://github.com/ZhangYikaii/chi-square">[Source Code]</a>
+  </p>
+  </li>
+  <p style="color:#5F5F5F;font-family:Calibri, sans-serif">
+  We propose chi-square model, a novel method for learning debiased representation. The chi-square model addresses dataset bias by identifying Intermediate Attribute Samples (IASs) operating.
+  </p>
+  </ul>
+  </td></tr>
+  </table>
+  </div>
+  </details>
+
+  <details>
+  <summary style="margin-left: 10px;">Spectral Norm</summary>
+  <div style="margin-left: 30px;">
+  <table class="imgtable" style="border: none; text-align: center;"><tr><td>
+  <img src="https://github.com/ZhangYikaii/LAMDA-Beamer-Template/blob/main/logos/adapter.png?raw=true" alt="WSFG" height="120px" style="object-fit: cover; width: 100%; height: 100%;" />&nbsp;</td>
+  <td align="left"><ul>
+  <li><p>Rakshith Sharma Srinivasa, Mark A. Davenport, Justin Romberg. <b>Trading beams for bandwidth: Imaging with randomized beamforming.</b> In: ICML'19.
+  <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Zhang_Learning_Debiased_Representations_via_Conditional_Attribute_Interpolation_CVPR_2023_paper.pdf">[Paper]</a>
+  <a href="https://github.com/ZhangYikaii/chi-square">[Source Code]</a>
+  </p>
+  </li>
+  <p style="color:#5F5F5F;font-family:Calibri, sans-serif">
+  We propose chi-square model, a novel method for learning debiased representation. The chi-square model addresses dataset bias by identifying Intermediate Attribute Samples (IASs) operating.
+  </p>
+  </ul>
+  </td></tr>
+  </table>
+  </div>
+  </details>
+
+  <details>
+  <summary style="margin-left: 10px;">OT-based</summary>
+  <div style="margin-left: 30px;">
+  <table class="imgtable" style="border: none; text-align: center;"><tr><td>
+  <img src="https://github.com/ZhangYikaii/LAMDA-Beamer-Template/blob/main/logos/adapter.png?raw=true" alt="WSFG" height="120px" style="object-fit: cover; width: 100%; height: 100%;" />&nbsp;</td>
+  <td align="left"><ul>
+  <li><p>Rakshith Sharma Srinivasa, Mark A. Davenport, Justin Romberg. <b>Trading beams for bandwidth: Imaging with randomized beamforming.</b> In: ICML'19.
+  <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Zhang_Learning_Debiased_Representations_via_Conditional_Attribute_Interpolation_CVPR_2023_paper.pdf">[Paper]</a>
+  <a href="https://github.com/ZhangYikaii/chi-square">[Source Code]</a>
+  </p>
+  </li>
+  <p style="color:#5F5F5F;font-family:Calibri, sans-serif">
+  We propose chi-square model, a novel method for learning debiased representation. The chi-square model addresses dataset bias by identifying Intermediate Attribute Samples (IASs) operating.
+  </p>
+  </ul>
+  </td></tr>
   </table>
   </div>
   </details>
 
 
 
++ Efficient Tuning with Transferred Addin-like Parameters
+  <details>
+  <summary style="margin-left: 10px;">Adapter</summary>
+  
+  </details>
+
+  <details>
+  <summary style="margin-left: 10px;">LoRA</summary>
+  
+  </details>
+
+  <details>
+  <summary style="margin-left: 10px;">VPT / Prefix</summary>
+  
+  </details>
+
+  <details>
+  <summary style="margin-left: 10px;">Scaling & Shifting</summary>
+  
+  </details>
+
+  <details>
+  <summary style="margin-left: 10px;">Fact-Tuning</summary>
+  
+  </details>
+
+  <details>
+  <summary style="margin-left: 10px;">Convpass</summary>
+  
+  </details>
+
+  <details>
+  <summary style="margin-left: 10px;">AdaptFormer</summary>
+  
+  </details>
+
+
++ Utilization of Pre-Trained Features and Partial Backbones
+  <details>
+  <summary style="margin-left: 10px;">Linear Probing</summary>
+  
+  </details>
+
+  <details>
+  <summary style="margin-left: 10px;">Partial-k</summary>
+  
+  </details>
+
+  <details>
+  <summary style="margin-left: 10px;">Nearest Class Mean</summary>
+  
+  </details>
+
+  <details>
+  <summary style="margin-left: 10px;">SimpleShot</summary>
+  
+  </details>
+
+  <details>
+  <summary style="margin-left: 10px;">BitFit</summary>
+  
+  </details>
+
+  <details>
+  <summary style="margin-left: 10px;">Diff Pruning</summary>
+  
+  </details>
+
+
++ Supervisions from Pre-Trained Predictions
+  <details>
+  <summary style="margin-left: 10px;">Vanilla Knowledge Distillation / LwF</summary>
+  
+  </details>
+
+  <details>
+  <summary style="margin-left: 10px;">FitNet</summary>
+  
+  </details>
+
+  <details>
+  <summary style="margin-left: 10px;">Relational Knowledge Distillation (RKD)</summary>
+  
+  </details>
+
+  <details>
+  <summary style="margin-left: 10px;">Similarity-Preserving Knowledge Distillation (SPKD)</summary>
+  
+  </details>
+
+  <details>
+  <summary style="margin-left: 10px;">Contrastive Representation Distillation (CRD)</summary>
+  
+  </details>
+
+  <details>
+  <summary style="margin-left: 10px;">Variational Information Distillation (VID)</summary>
+  
+  </details>
+
+  <details>
+  <summary style="margin-left: 10px;">Flow of Solution Procedure (FSP)</summary>
+  
+  </details>
+    <details>
+  <summary style="margin-left: 10px;">Neuron Selectivity Transfer (NST)</summary>
+  
+  </details>
+    <details>
+  <summary style="margin-left: 10px;">Relationship Facilitated Local Classifier Distillation (REFILLED)</summary>
+  
+  </details>
+
+
++ Ensembling and Merging Multiple Models
+  <details>
+  <summary style="margin-left: 10px;">Model Soup</summary>
+  
+  </details>
+
+  <details>
+  <summary style="margin-left: 10px;">WiSE-FT</summary>
+  
+  </details>
+
+  <details>
+  <summary style="margin-left: 10px;">Zip It!</summary>
+  
+  </details>
+
+
+
+<!-- 
 + Assembling Addins with Parameter-Efficient Transfer Learning
   + [Adapter](https://arxiv.org/abs/1902.00751)
   + [LoRA](https://arxiv.org/abs/2106.09685)
@@ -82,7 +335,7 @@
   + Support incorporating method like building *LEGO* blocks [[here]](TODO) (文档tutorial链接)
   + Support any dataset and pre-trained model [[here]](TODO) (文档tutorial链接)
   + Support multi-GPU training [[here]](TODO) (文档tutorial链接)
-  + Support both [TensorBoard](https://www.tensorflow.org/tensorboard) and [W&B](https://wandb.ai/) log tools [[here]](TODO) (文档tutorial链接)
+  + Support both [TensorBoard](https://www.tensorflow.org/tensorboard) and [W&B](https://wandb.ai/) log tools [[here]](TODO) (文档tutorial链接) -->
 
 
 > "Zhijian" in Chinese means handling complexity with concise and efficient methods. Given the variations in pre-trained models and the deployment overhead of full parameter fine-tuning, Zhijian represents a solution that is easily reusable, maintains high accuracy, and maximizes the potential of pre-trained models.
