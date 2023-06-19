@@ -1,13 +1,3 @@
-<style>
-  table {
-    border-collapse: collapse;
-  }
-  table td, table th {
-    border: none;
-    padding: 8px;
-  }
-</style>
-
 <div align="center">
   <a href="http://tianshou.readthedocs.io"><img width="256px" height="auto" src="https://github.com/ZhangYikaii/LAMDA-Beamer-Template/blob/5dc5cbf79bd0d9f984bd803457dbad642c9f4d25/logos/zhijian-logo.jpg?raw=true"></a>
 </div>
@@ -42,7 +32,7 @@
   <details>
   <summary style="margin-left: 10px;">Adapter</summary>
   <div style="margin-left: 30px;">
-  <table class="imgtable" style="border: none; text-align: center;"><tr><td>
+  <table class="imgtable" style="border-collapse: collapse;"><tr><td>
 	<img src="https://github.com/ZhangYikaii/LAMDA-Beamer-Template/blob/main/logos/adapter.png?raw=true" alt="WSFG" height="120px" style="object-fit: cover; width: 100%; height: 100%;" />&nbsp;</td>
 	<td align="left"><ul>
 	<li><p>Rakshith Sharma Srinivasa, Mark A. Davenport, Justin Romberg. Trading beams for bandwidth: Imaging with randomized beamforming. In: ICML'19.
