@@ -32,7 +32,7 @@
   <details>
   <summary style="margin-left: 10px;">Adapter</summary>
   <div style="margin-left: 30px;">
-  <table class="imgtable"><tr><td>
+  <table class="imgtable" style="border: none; text-align: center;"><tr><td>
 	<img src="https://github.com/ZhangYikaii/LAMDA-Beamer-Template/blob/main/logos/adapter.png?raw=true" alt="WSFG" height="120px" style="object-fit: cover; width: 100%; height: 100%;" />&nbsp;</td>
 	<td align="left"><ul>
 	<li><p>Rakshith Sharma Srinivasa, Mark A. Davenport, Justin Romberg. Trading beams for bandwidth: Imaging with randomized beamforming. In: ICML'19.
@@ -47,6 +47,8 @@
 	</td></tr>
   </table>
   </div>
+  </details>
+
 
 
 + Assembling Addins with Parameter-Efficient Transfer Learning
