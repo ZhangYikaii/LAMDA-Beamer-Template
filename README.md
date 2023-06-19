@@ -16,7 +16,6 @@
     <img src="https://img.shields.io/badge/PYTORCH-1.4+-red?style=for-the-badge&logo=pytorch" alt="PyTorch - Version", height="23">
     <img src="https://img.shields.io/badge/PYTHON-3.7+-red?style=for-the-badge&logo=python&logoColor=white" alt="Python - Version", height="23">
 </div>
-
 <h4 align="center">
     <p>
         A PyTorch-based Framework for Reusing Pre-trained Models
@@ -28,6 +27,27 @@
 </h4>
 
 **Zhijian** ([**执简**驭繁](https://baike.baidu.com/item/%E6%89%A7%E7%AE%80%E9%A9%AD%E7%B9%81)) is a PyTorch-based lightweight framework for **reusing pre-trained models and transferring them to new datasets**. It offers a unified and flexible solution for popular methods such as parameter-efficient based, knowledge distillation based, nearest prototype based, regularization based, and model soup based reuse. Zhijian achieves state-of-the-art model reuse capabilities with a workflow that involves **assembling addins**, **allocating training strategies**, and **aggregating model parameters**. The provided interface methods include:
+
++ Regularization via Pre-Trained Parameters
+  <details>
+  <summary style="margin-left: 10px;">Adapter</summary>
+  <div style="margin-left: 30px;">
+  <table class="imgtable"><tr><td>
+	<img src="https://github.com/ZhangYikaii/LAMDA-Beamer-Template/blob/main/logos/adapter.png?raw=true" alt="WSFG" height="120px" />&nbsp;</td>
+	<td align="left"><ul>
+	<li><p>Rakshith Sharma Srinivasa, Mark A. Davenport, Justin Romberg. Trading beams for bandwidth: Imaging with randomized beamforming. In: ICML'19.
+	<a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Zhang_Learning_Debiased_Representations_via_Conditional_Attribute_Interpolation_CVPR_2023_paper.pdf">[Paper]</a>
+	<a href="https://github.com/ZhangYikaii/chi-square">[Code]</a>
+	</p>
+	</li>
+	<p style="color:#5F5F5F;font-family:Calibri, sans-serif">
+	We propose chi-square model, a novel method for learning debiased representation. The chi-square model addresses dataset bias by identifying Intermediate Attribute Samples (IASs) operating a chi-pattern and rectifying representations through a chi-structured metric learning objective. It achieves remarkable performance across diverse datasets.
+	</p>
+	</ul>
+	</td></tr>
+  </table>
+  </div>
+
 
 + Assembling Addins with Parameter-Efficient Transfer Learning
   + [Adapter](https://arxiv.org/abs/1902.00751)
