@@ -386,21 +386,148 @@ The example scripts are under [test/](https://github.com/thu-ml/tianshou/blob/ma
 ### 🎯 Concise things do big
 TODO 这里画一张图和描述，图中有四个功能板块：Finetune、KD/Reg、PETL、Soup，并表示加入任意一个板块的方法修改的代码不多，只有几行，标注在图旁边。
 
-| Model Reuse Framework | GitHub Stars | Unified View | # of Alg. <sup>(1)</sup> | # of Backbone <sup>(1)</sup> | # of Dataset <sup>(1)</sup> | LLM Support | Documentation | Last Update |
-| --- | --- | --- | --- | --- | --- | --- | --- |  --- |
-| <td colspan="9" align="left"><b>Regularization via Pre-Trained Parameters</b></td> |
-| [adapter-transformers](https://github.com/adapter-hub/adapter-transformers) | [![GitHub stars](https://img.shields.io/github/stars/adapter-hub/adapter-transformers)](https://github.com/adapter-hub/adapter-transformers/stargazers) | 7<sup> (3)</sup>         | :heavy_check_mark: (gym)       | :heavy_minus_sign: <sup>(2)</sup> | :x:                | :heavy_check_mark: | PyTorch    | TODO |
-| <td colspan="9" align="left"><b>Efficient Tuning with Transferred Addin-like Parameters</b></td> |
-| [🤗 PEFT](https://github.com/huggingface/peft) | [![GitHub stars](https://img.shields.io/github/stars/huggingface/peft)](https://github.com/huggingface/peft/stargazers) | 11 | :heavy_check_mark: (gym) | :heavy_minus_sign: <sup>(2)</sup> | :heavy_check_mark: | :x:  | TF1 | TODO |
-| [adapter-transformers](https://github.com/adapter-hub/adapter-transformers) | [![GitHub stars](https://img.shields.io/github/stars/adapter-hub/adapter-transformers)](https://github.com/adapter-hub/adapter-transformers/stargazers) | 7<sup> (3)</sup>         | :heavy_check_mark: (gym)       | :heavy_minus_sign: <sup>(2)</sup> | :x:                | :heavy_check_mark: | PyTorch    | TODO |
-| <td colspan="9" align="left"><b>Efficient Tuning with Transferred Addin-like Parameters</b></td> |
-| [adapter-transformers](https://github.com/adapter-hub/adapter-transformers) | [![GitHub stars](https://img.shields.io/github/stars/adapter-hub/adapter-transformers)](https://github.com/adapter-hub/adapter-transformers/stargazers) | 7<sup> (3)</sup>         | :heavy_check_mark: (gym)       | :heavy_minus_sign: <sup>(2)</sup> | :x:                | :heavy_check_mark: | PyTorch    | TODO |
-| <td colspan="9" align="left"><b>Efficient Tuning with Transferred Addin-like Parameters</b></td> |
-| [adapter-transformers](https://github.com/adapter-hub/adapter-transformers) | [![GitHub stars](https://img.shields.io/github/stars/adapter-hub/adapter-transformers)](https://github.com/adapter-hub/adapter-transformers/stargazers) | 7<sup> (3)</sup>         | :heavy_check_mark: (gym)       | :heavy_minus_sign: <sup>(2)</sup> | :x:                | :heavy_check_mark: | PyTorch    | TODO |
-| <td colspan="9" align="left"><b>Efficient Tuning with Transferred Addin-like Parameters</b></td> |
-| [adapter-transformers](https://github.com/adapter-hub/adapter-transformers) | [![GitHub stars](https://img.shields.io/github/stars/adapter-hub/adapter-transformers)](https://github.com/adapter-hub/adapter-transformers/stargazers) | 7<sup> (3)</sup>         | :heavy_check_mark: (gym)       | :heavy_minus_sign: <sup>(2)</sup> | :x:                | :heavy_check_mark: | PyTorch    | TODO |
-|  |  |  |  |  |  |  |  |
-| [Tianshou](https://github.com/thu-ml/tianshou)                     | [![GitHub stars](https://img.shields.io/github/stars/thu-ml/tianshou)](https://github.com/thu-ml/tianshou/stargazers)                           | 20                       | :heavy_check_mark: (Gymnasium) | :heavy_check_mark:                | :heavy_check_mark: | :heavy_check_mark: | PyTorch | TODO |
+<table>
+  <tr>
+    <td colspan="9" style="border-bottom: 2px solid black;"></td>
+  </tr>
+  <tr>
+    <td><b>Model Reuse Framework</b></td>
+    <td><b>GitHub Stars</b></td>
+    <td><b>Unified View</b></td>
+    <td><b># of Alg.<sup>(1)</sup></b></td>
+    <td><b># of Backbone<sup>(1)</sup></b></td>
+    <td><b># of Dataset<sup>(1)</sup></b></td>
+    <td><b>LLM Support</b></td>
+    <td><b>Documentation</b></td>
+    <td><b>Last Update</b></td>
+  </tr>
+  <tr><td colspan="9" align="left"><b>Regularization via Pre-Trained Parameters</b></td></tr>
+  <tr>
+    <td><a href="https://github.com/huggingface/peft">PEFT</a></td>
+    <td><a href="https://github.com/huggingface/peft/stargazers">
+      <img src="https://img.shields.io/github/stars/huggingface/peft" alt="GitHub stars">
+    </a></td>
+    <td>✔️/❌/➖<sup>(2)</sup></td>
+    <td>TD</td>
+    <td>TD</td>
+    <td>TD</td>
+    <td>TD</td>
+    <td>TD</td>
+    <td>TD</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/adapter-hub/adapter-transformers">adapter-transformers</a></td>
+    <td><a href="https://github.com/adapter-hub/adapter-transformers/stargazers">
+      <img src="https://img.shields.io/github/stars/adapter-hub/adapter-transformers" alt="GitHub stars">
+    </a></td>
+    <td>✔️/❌/➖<sup>(2)</sup></td>
+    <td>TD</td>
+    <td>TD</td>
+    <td>TD</td>
+    <td>TD</td>
+    <td>TD</td>
+    <td>TD</td>
+  </tr>
+  <tr><td colspan="9" align="left"><b>Efficient Tuning with Transferred Addin-like Parameters</b></td></tr>
+  <tr>
+    <td><a href="https://github.com/adapter-hub/adapter-transformers">adapter-transformers</a></td>
+    <td><a href="https://github.com/adapter-hub/adapter-transformers/stargazers">
+      <img src="https://img.shields.io/github/stars/adapter-hub/adapter-transformers" alt="GitHub stars">
+    </a></td>
+    <td>✔️/❌/➖<sup>(2)</sup></td>
+    <td>TD</td>
+    <td>TD</td>
+    <td>TD</td>
+    <td>TD</td>
+    <td>TD</td>
+    <td>TD</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/adapter-hub/adapter-transformers">adapter-transformers</a></td>
+    <td><a href="https://github.com/adapter-hub/adapter-transformers/stargazers">
+      <img src="https://img.shields.io/github/stars/adapter-hub/adapter-transformers" alt="GitHub stars">
+    </a></td>
+    <td>✔️/❌/➖<sup>(2)</sup></td>
+    <td>TD</td>
+    <td>TD</td>
+    <td>TD</td>
+    <td>TD</td>
+    <td>TD</td>
+    <td>TD</td>
+  </tr>
+  <tr><td colspan="9" align="left"><b>Utilization of Pre-Trained Features and Partial Backbones</b></td></tr>
+  <tr>
+    <td><a href="https://github.com/adapter-hub/adapter-transformers">adapter-transformers</a></td>
+    <td><a href="https://github.com/adapter-hub/adapter-transformers/stargazers">
+      <img src="https://img.shields.io/github/stars/adapter-hub/adapter-transformers" alt="GitHub stars">
+    </a></td>
+    <td>✔️/❌/➖<sup>(2)</sup></td>
+    <td>TD</td>
+    <td>TD</td>
+    <td>TD</td>
+    <td>TD</td>
+    <td>TD</td>
+    <td>TD</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/adapter-hub/adapter-transformers">adapter-transformers</a></td>
+    <td><a href="https://github.com/adapter-hub/adapter-transformers/stargazers">
+      <img src="https://img.shields.io/github/stars/adapter-hub/adapter-transformers" alt="GitHub stars">
+    </a></td>
+    <td>✔️/❌/➖<sup>(2)</sup></td>
+    <td>TD</td>
+    <td>TD</td>
+    <td>TD</td>
+    <td>TD</td>
+    <td>TD</td>
+    <td>TD</td>
+  </tr>
+  <tr><td colspan="9" align="left"><b>Supervisions from Pre-Trained Predictions</b></td></tr>
+  <tr>
+    <td><a href="https://github.com/adapter-hub/adapter-transformers">adapter-transformers</a></td>
+    <td><a href="https://github.com/adapter-hub/adapter-transformers/stargazers">
+      <img src="https://img.shields.io/github/stars/adapter-hub/adapter-transformers" alt="GitHub stars">
+    </a></td>
+    <td>✔️/❌/➖<sup>(2)</sup></td>
+    <td>TD</td>
+    <td>TD</td>
+    <td>TD</td>
+    <td>TD</td>
+    <td>TD</td>
+    <td>TD</td>
+  </tr>
+  <tr><td colspan="9" align="left"><b>Ensembling and Merging Multiple Models</b></td></tr>
+  <tr>
+    <td><a href="https://github.com/adapter-hub/adapter-transformers">adapter-transformers</a></td>
+    <td><a href="https://github.com/adapter-hub/adapter-transformers/stargazers">
+      <img src="https://img.shields.io/github/stars/adapter-hub/adapter-transformers" alt="GitHub stars">
+    </a></td>
+    <td>✔️/❌/➖<sup>(2)</sup></td>
+    <td>TD</td>
+    <td>TD</td>
+    <td>TD</td>
+    <td>TD</td>
+    <td>TD</td>
+    <td>TD</td>
+  <tr>
+    <td colspan="9" style="border-bottom: 2px solid grey;"></td>
+  </tr>
+  </tr>
+    <tr>
+    <td><b>Zhijian</b></td>
+    <td><a href="https://github.com/adapter-hub/adapter-transformers/stargazers">
+      <img src="https://img.shields.io/github/stars/adapter-hub/adapter-transformers" alt="GitHub stars">
+    </a></td>
+    <td>✔️/❌/➖<sup>(2)</sup></td>
+    <td>TD</td>
+    <td>TD</td>
+    <td>TD</td>
+    <td>TD</td>
+    <td>TD</td>
+    <td>TD</td>
+  </tr>
+
+</table>
 
 <sup>(1): access date: 2021-08-08</sup>
 
