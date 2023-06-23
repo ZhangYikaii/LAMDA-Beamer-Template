@@ -379,7 +379,6 @@ The example scripts are under [test/](https://github.com/thu-ml/tianshou/blob/ma
 
 中文文档位于 [https://tianshou.readthedocs.io/zh/master/](https://tianshou.readthedocs.io/zh/master/)。
 
-
 &nbsp;
 
 ## Why Zhijian?
@@ -389,8 +388,17 @@ TODO 这里画一张图和描述，图中有四个功能板块：Finetune、KD/R
 
 | Model Reuse Framework | GitHub Stars | Unified View | # of Alg. <sup>(1)</sup> | # of Backbone <sup>(1)</sup> | # of Dataset <sup>(1)</sup> | LLM Support | Documentation | Last Update |
 | --- | --- | --- | --- | --- | --- | --- | --- |  --- |
-| [Stable-Baselines](https://github.com/hill-a/stable-baselines) | [![GitHub stars](https://img.shields.io/github/stars/hill-a/stable-baselines)](https://github.com/hill-a/stable-baselines/stargazers) | 11 | :heavy_check_mark: (gym) | :heavy_minus_sign: <sup>(2)</sup> | :heavy_check_mark: | :x:  | TF1 | TODO |
-| [Stable-Baselines3](https://github.com/DLR-RM/stable-baselines3)   | [![GitHub stars](https://img.shields.io/github/stars/DLR-RM/stable-baselines3)](https://github.com/DLR-RM/stable-baselines3/stargazers)         | 7<sup> (3)</sup>         | :heavy_check_mark: (gym)       | :heavy_minus_sign: <sup>(2)</sup> | :x:                | :heavy_check_mark: | PyTorch    | TODO |
+| <td colspan="9" align="left"><b>Regularization via Pre-Trained Parameters</b></td> |
+| [adapter-transformers](https://github.com/adapter-hub/adapter-transformers) | [![GitHub stars](https://img.shields.io/github/stars/adapter-hub/adapter-transformers)](https://github.com/adapter-hub/adapter-transformers/stargazers) | 7<sup> (3)</sup>         | :heavy_check_mark: (gym)       | :heavy_minus_sign: <sup>(2)</sup> | :x:                | :heavy_check_mark: | PyTorch    | TODO |
+| <td colspan="9" align="left"><b>Efficient Tuning with Transferred Addin-like Parameters</b></td> |
+| [🤗 PEFT](https://github.com/huggingface/peft) | [![GitHub stars](https://img.shields.io/github/stars/huggingface/peft)](https://github.com/huggingface/peft/stargazers) | 11 | :heavy_check_mark: (gym) | :heavy_minus_sign: <sup>(2)</sup> | :heavy_check_mark: | :x:  | TF1 | TODO |
+| [adapter-transformers](https://github.com/adapter-hub/adapter-transformers) | [![GitHub stars](https://img.shields.io/github/stars/adapter-hub/adapter-transformers)](https://github.com/adapter-hub/adapter-transformers/stargazers) | 7<sup> (3)</sup>         | :heavy_check_mark: (gym)       | :heavy_minus_sign: <sup>(2)</sup> | :x:                | :heavy_check_mark: | PyTorch    | TODO |
+| <td colspan="9" align="left"><b>Efficient Tuning with Transferred Addin-like Parameters</b></td> |
+| [adapter-transformers](https://github.com/adapter-hub/adapter-transformers) | [![GitHub stars](https://img.shields.io/github/stars/adapter-hub/adapter-transformers)](https://github.com/adapter-hub/adapter-transformers/stargazers) | 7<sup> (3)</sup>         | :heavy_check_mark: (gym)       | :heavy_minus_sign: <sup>(2)</sup> | :x:                | :heavy_check_mark: | PyTorch    | TODO |
+| <td colspan="9" align="left"><b>Efficient Tuning with Transferred Addin-like Parameters</b></td> |
+| [adapter-transformers](https://github.com/adapter-hub/adapter-transformers) | [![GitHub stars](https://img.shields.io/github/stars/adapter-hub/adapter-transformers)](https://github.com/adapter-hub/adapter-transformers/stargazers) | 7<sup> (3)</sup>         | :heavy_check_mark: (gym)       | :heavy_minus_sign: <sup>(2)</sup> | :x:                | :heavy_check_mark: | PyTorch    | TODO |
+| <td colspan="9" align="left"><b>Efficient Tuning with Transferred Addin-like Parameters</b></td> |
+| [adapter-transformers](https://github.com/adapter-hub/adapter-transformers) | [![GitHub stars](https://img.shields.io/github/stars/adapter-hub/adapter-transformers)](https://github.com/adapter-hub/adapter-transformers/stargazers) | 7<sup> (3)</sup>         | :heavy_check_mark: (gym)       | :heavy_minus_sign: <sup>(2)</sup> | :x:                | :heavy_check_mark: | PyTorch    | TODO |
 |  |  |  |  |  |  |  |  |
 | [Tianshou](https://github.com/thu-ml/tianshou)                     | [![GitHub stars](https://img.shields.io/github/stars/thu-ml/tianshou)](https://github.com/thu-ml/tianshou/stargazers)                           | 20                       | :heavy_check_mark: (Gymnasium) | :heavy_check_mark:                | :heavy_check_mark: | :heavy_check_mark: | PyTorch | TODO |
 
@@ -469,3 +477,46 @@ If you find Tianshou useful, please cite it in your publications.
 Tianshou was previously a reinforcement learning platform based on TensorFlow. You can check out the branch [`priv`](https://github.com/thu-ml/tianshou/tree/priv) for more detail. Many thanks to [Haosheng Zou](https://github.com/HaoshengZou)'s pioneering work for Tianshou before version 0.1.1.
 
 We would like to thank [TSAIL](http://ml.cs.tsinghua.edu.cn/) and [Institute for Artificial Intelligence, Tsinghua University](http://ml.cs.tsinghua.edu.cn/thuai/) for providing such an excellent AI research platform.
+
+
+考虑原始空间中的约束进行降维
+考虑每个epoch的模型是扩增了信息
+考虑模型训练过程中间的信息
+考虑将其他降维结合进来
+  考虑将该分析方法用在其他领域
+考虑learning from models的分析论文该从什么角度入手
+思考无论哪个数据集的模型，构建模型表示的中间状态，和Autoencoder类似，学出encoder
+
+
+
+
+block
+
+
+adapter.->block
+
+LoRA:
+(blocks[:].attn.qkv)->(LoRA.adapt)
+
+Convpass:
+(blocks[:].norm1)->(Convpass.adapt)->|
+             (blocks[:].drop_path1)->|
+
+   |->(blocks[:].norm2)
+   |->(Convpass.adapt)->|
+(blocks[:].drop_path2)->|
+
+Adapter:
+(blocks[:].drop_path1)->(Adapter.adapt)
+
+(blocks[:].drop_path2)->(Adapter.adapt)
+
+SSF:
+(SSF.adapt_input)->(patch_embed.norm)
+
+(patch_embed.norm)->(SSF.adapt_output_post)
+
+
+VPT:
+(VPT.cat_prompt_shallow)->(blocks[0])
+
