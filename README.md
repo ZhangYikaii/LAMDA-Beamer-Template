@@ -303,8 +303,8 @@
 
 
 
-<!-- 
-+ Assembling Addins with Parameter-Efficient Transfer Learning
+
+<!-- + Assembling Addins with Parameter-Efficient Transfer Learning
   + [Adapter](https://arxiv.org/abs/1902.00751)
   + [LoRA](https://arxiv.org/abs/2106.09685)
   + [Visual Prompt Tuning](https://arxiv.org/abs/2203.12119)
@@ -319,11 +319,14 @@
   + [Batch Spectral Shrinkage](https://proceedings.neurips.cc/paper/2019/hash/c6bff625bdb0393992c9d4db0c6bbe45-Abstract.html)
 + Aggregating Parameters from Model Soup and Merging
   + [Model Soup](https://arxiv.org/abs/2203.05482)
-  + [WiSE-FT](https://arxiv.org/abs/2109.01903)
+  + [WiSE-FT](https://arxiv.org/abs/2109.01903) -->
 
-💡 **Zhijian** also has the following highlights:
+💡 **Zhijian** also has the following **highlights**:
 
-+ Support access to any of the **pre-trained model zoo**, including 🤗Hugging Face series — [Transformers](https://github.com/huggingface/transformers), [PyTorch Image Models (timm)](https://github.com/huggingface/pytorch-image-models), OpenAI series — [CLIP](https://github.com/openai/CLIP) and other high-star projects.
++ Support access to any of the **pre-trained model zoo**, including:
+  + 🤗Hugging Face series — [Transformers](https://github.com/huggingface/transformers), [PyTorch Image Models (timm)](https://github.com/huggingface/pytorch-image-models)
+  + OpenAI series — [CLIP](https://github.com/openai/CLIP)
+  + Other popular projects, *e.g.*, [vit-pytorch](https://github.com/lucidrains/vit-pytorch) ([![GitHub stars](https://img.shields.io/github/stars/lucidrains/vit-pytorch)](https://github.com/lucidrains/vit-pytorch/stargazers)).
 + Extremely easy to **get started** and **customize**
   + Get started with a 10 minute blitz [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/qubvel/segmentation_models.pytorch/blob/master/examples/binary_segmentation_intro.ipynb)
   + Customize datasets with step-by-step instructions [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/qubvel/segmentation_models.pytorch/blob/master/examples/binary_segmentation_intro.ipynb)
@@ -335,7 +338,7 @@
   + Support incorporating method like building *LEGO* blocks [[here]](TODO) (文档tutorial链接)
   + Support any dataset and pre-trained model [[here]](TODO) (文档tutorial链接)
   + Support multi-GPU training [[here]](TODO) (文档tutorial链接)
-  + Support both [TensorBoard](https://www.tensorflow.org/tensorboard) and [W&B](https://wandb.ai/) log tools [[here]](TODO) (文档tutorial链接) -->
+  + Support both [TensorBoard](https://www.tensorflow.org/tensorboard) and [W&B](https://wandb.ai/) log tools [[here]](TODO) (文档tutorial链接)
 
 
 > "Zhijian" in Chinese means handling complexity with concise and efficient methods. Given the variations in pre-trained models and the deployment overhead of full parameter fine-tuning, Zhijian represents a solution that is easily reusable, maintains high accuracy, and maximizes the potential of pre-trained models.
